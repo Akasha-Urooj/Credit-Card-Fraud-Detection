@@ -15,12 +15,7 @@ st.set_page_config(
 # -----------------------------
 # Load Model
 # -----------------------------
-MODEL_PATH = os.path.join(
-    os.path.dirname(__file__),
-    "..",
-    "models",
-    "final_fraud_model.pkl"
-)
+MODEL_PATH = "final_fraud_model.pkl"
 
 model = joblib.load(MODEL_PATH)
 
